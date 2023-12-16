@@ -1,0 +1,7 @@
+Dessa forma, seu desafio de hoje será garantir um conjunto mínimo de validações para o seu formulário. Como ele representa uma pessoa, com nome e data de nascimento, as regras de negócio serão:
+
+Um nome precisa ter no mínimo três letras.
+Um nome pode ter no máximo 120 letras.
+Um nome pode apenas conter letras, e não números.
+A data de nascimento precisa estar no formato DD/MM/AAAA, por exemplo: 31/01/2021.
+O mês informado deve estar entre 01 e 12.

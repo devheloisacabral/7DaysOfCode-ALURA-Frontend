@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/7DaysOfCode-JS-DOM/style.css">
+    <link rel="stylesheet" href="/7DaysOfCode-JS-DOM/reset.css">
+    <title>7DaysOfCode-DOM&JS</title>
+</head>
+<body>
+    <div id="header">
+    </div>
+    <div>
+        <h1 id="h1">Meus Aniversários</h1>
+    </div><br> <br> <br>
+    <form action="">
+        <div id="inputs">
+            <div id="nome">
+                <label for="nome">Nome da pessoa (campo obrigatório)</label> <br> 
+                <input type="text" id="nomeinput" placeholder="Digite o nome da pessoa" minlength="3" maxlength="120" onkeypress="return lettersOnly(event);" required>
+            </div> <br> <br>
+            <div id="data">
+                <label for="data">Data de nascimento (campo obrigatório)</label> <br> 
+                <input type="date" id="datainput" placeholder="Digite a data de nascimento" required>
+            </div> <br> <br> <br>
+            <div id="button">
+                <button>Salvar</button>
+            </div>
+        </div>
+    </form>
+    <script src="/7DaysOfCode-JS-DOM/script.js"></script>
+</body>
+</html>
