@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "DOM": "^0.0.3",
-    "prompt-sync": "^4.2.0"
-  }
-}
