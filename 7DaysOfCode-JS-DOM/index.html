@@ -13,18 +13,18 @@
     <div>
         <h1 id="h1">Meus Aniversários</h1>
     </div><br> <br> <br>
-    <form action="">
+    <form id="form" action="">
         <div id="inputs">
             <div id="nome">
                 <label for="nome">Nome da pessoa (campo obrigatório)</label> <br> 
-                <input type="text" id="nomeinput" placeholder="Digite o nome da pessoa" minlength="3" maxlength="120" onkeypress="return lettersOnly(event);" required>
+                <input type="text" id="nomeinput" placeholder="Digite o nome da pessoa" minlength="3" maxlength="120"  required>
             </div> <br> <br>
             <div id="data">
                 <label for="data">Data de nascimento (campo obrigatório)</label> <br> 
                 <input type="date" id="datainput" placeholder="Digite a data de nascimento" required>
             </div> <br> <br> <br>
             <div id="button">
-                <button>Salvar</button>
+                <button onclick="create()">Salvar</button>
             </div>
         </div>
     </form>

@@ -1,11 +1,25 @@
-function lettersOnly(evt) {
-    evt = (evt) ? evt : event;
-    var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode :
-        ((evt.which) ? evt.which : 0));
-    if (charCode > 31 && (charCode < 65 || charCode > 90) &&
-        (charCode < 97 || charCode > 122)) {
-        alert("O campo de nome só aceita letras");
-        return false;
+    
+
+
+
+
+function create(){
+
+    const nome = document.getElementById("nomeinput").value
+    const data = document.getElementById('datainput').value
+    const registrosAntigos = []
+
+
+    const pessoa = {
+        nome: nome,
+        data: data
     }
-    return true;
+    const pessoas = JSON.parse(localStorage.getItem('pessoas')) || []
+    registrosAntigos.push(pessoas)
+    console.log(registrosAntigos)
+    localStorage.setItem("registro", JSON.stringify(pessoa))
+    
+
 }
+
+
