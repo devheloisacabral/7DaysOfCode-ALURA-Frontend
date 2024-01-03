@@ -1,0 +1,20 @@
+.box{
+    width: 62px;
+    height: 62px;
+    border: 1px solid #585858;
+    background: #14161C;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item{
+    flex: 1 0 calc(20% - 4px); /* Calcula a largura para 20% do container menos a largura das bordas */
+    height: 100px; /* Altura desejada */
+     margin: 0 ; /* Remove o espaço entre os itens */
+  
+
+}
