@@ -12,7 +12,7 @@ fetch(keys.API_URL, {
   .then((data) => {
     console.log(data)
     const list = data.d; //toda lista de filmes do array
-    list.map((item, index) => {
+    data.map((item, index) => {
       if(index !== 0){
         renderMovie(item)
       }
@@ -29,8 +29,8 @@ const moviesContainer = document.querySelector(".movies"); //pega a div movies d
 
 function renderMovie(data) {
   
-  const { l: title, i, rank: rating, y: year,  description, isFavorited } = data; //atribui a movies esses atributos
-  const{imageUrl: image} = i 
+  const { title: title, image, rating, year,  description, isFavorited } = data; //atribui a movies esses atributos
+ 
 
   const movieElement = document.createElement("div"); //cria uma div
   movieElement.classList.add("movie"); //coloca a class dessa div como movie
